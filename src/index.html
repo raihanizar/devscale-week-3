@@ -9,7 +9,18 @@
 </head>
 
 <body>
-    <h1 class="bg-slate-200 text-teal-800 text-4xl">Hello!</h1>
+    <div class="header bg-black text-white p-4">HEADER</div>
+    <nav class="menus bg-gray-400 p-4 flex flex-col gap-y-4">
+        <div class="menu about">ABOUT</div>
+        <div class="menu works">WORKS</div>
+        <div class="menu blog">BLOG</div>
+        <div class="menu contact">CONTACT</div>
+    </nav>
+    <div class="content about bg-emerald-200 p-4 hidden">this is ABOUT</div>
+    <div class="content works bg-emerald-200 p-4 hidden">this is WORKS</div>
+    <div class="content blog bg-emerald-200 p-4 hidden">this is BLOG</div>
+    <div class="content contact bg-emerald-200 p-4 hidden">this is CONTACT</div>
+    <div class="footer bg-gray-200 text-black p-4">FOOTER</div>
 
     <script type="module" src="js/main.js"></script>
 </body>
