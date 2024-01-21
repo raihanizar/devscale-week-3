@@ -1,16 +1,22 @@
 const menus = document.querySelectorAll(".menu");
 const contents = document.querySelectorAll(".content");
 menus.forEach(menu => {
-     menu.addEventListener("click", () => {
-        const selectedClass = menu.classList;
-        const category = selectedClass.item(1);
-        console.log(category);
-        // // hide semua content
-        // contents.forEach(content => content.classList.add("hidden"));
+  menu.addEventListener("click", () => {
+    const menuCategory = menu.classList.item(1);
 
-        // // munculkan lagi menu yg di-klik
-        // menu.classList.remove("hiden");
-    })
+    // hide semua content
+    contents.forEach(content => {
+      let contentCategory = content.classList.item(1);
+      if (contentCategory === menuCategory) {
+        content.style.display = "block";
+      } else {
+        content.style.display = "none";
+      }
+    });
+
+    // munculkan lagi menu yg di-klik
+    menu.classList.remove("hiden");
+  })
 })
 
 
