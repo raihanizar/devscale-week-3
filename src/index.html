@@ -2,27 +2,169 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/global.css">
-    <title>WEB</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/global.css">
+  <title>WEB</title>
 </head>
 
 <body>
-    <div class="header bg-black text-white p-4">HEADER</div>
-    <nav class="menus bg-gray-400 p-4 flex flex-col gap-y-4">
-        <div class="menu about">ABOUT</div>
-        <div class="menu works">WORKS</div>
-        <div class="menu blog">BLOG</div>
-        <div class="menu contact">CONTACT</div>
-    </nav>
-    <div class="content about bg-emerald-200 p-4 hidden">this is ABOUT</div>
-    <div class="content works bg-emerald-200 p-4 hidden">this is WORKS</div>
-    <div class="content blog bg-emerald-200 p-4 hidden">this is BLOG</div>
-    <div class="content contact bg-emerald-200 p-4 hidden">this is CONTACT</div>
-    <div class="footer bg-gray-200 text-black p-4">FOOTER</div>
+  <div class="header bg-black text-white p-4 h-16 flex items-center sticky top-0">HEADER</div>
+  <div class="main md:flex md:px-40">
+    <div class="sidebar bg-gray-400 p-4 hidden md:flex md:dlex-col">
+      <div class="menus hidden md:flex md:flex-col md:gap-y-4">
+        <div class="menu about text-6xl">ABOUT</div>
+        <div class="menu works text-6xl">WORKS</div>
+        <div class="menu blog text-6xl">BLOG</div>
+        <div class="menu contact text-6xl">CONTACT</div>
+      </div>
+    </div>
+    <div class="contents relative">
+      <div class="content about bg-emerald-200 top-0">
+        <div class="content-heading about bg-gray-400 p-4 text-6xl md:hidden sticky top-16">ABOUT</div>
+        <div class="content-text about bg-emerald-200 p-4">
+          Welcome to [Your Company Name], where innovation meets excellence. Established with a passion for pushing
+          boundaries and redefining industry standards, we pride ourselves on delivering cutting-edge solutions that
+          cater
+          to the evolving needs of our clients. At [Your Company Name], we believe in the power of collaboration and
+          continuous improvement, ensuring that every project we undertake reflects our commitment to quality and
+          ingenuity. Our team of dedicated professionals brings a wealth of expertise to the table, united by a common
+          goal: to exceed expectations and leave a lasting impact in the ever-changing landscape of [Your Industry].
+          <br><br>
+          Driven by a relentless pursuit of excellence, [Your Company Name] is not just a service provider but a partner
+          in your success story. We understand that each client is unique, and our tailored approach is designed to
+          address your specific challenges and goals. Whether you're seeking innovative technology solutions, strategic
+          consulting, or unparalleled customer support, we've got you covered. Join us on a journey where creativity
+          meets
+          functionality, and let's build a future together that's defined by progress, integrity, and unparalleled
+          achievement. Welcome to [Your Company Name] – where your vision becomes our mission.
+        </div>
+      </div>
+      <div class="content works bg-emerald-200 hidden">
+        <div class="content-heading works bg-gray-400 p-4 text-6xl md:hidden sticky top-16">WORKS</div>
+        <div class="content-text works bg-emerald-200 p-4"><b>1. Innovative Solutions for [Industry Name]</b>
+          <br>
+          At [Your Company Name], we take pride in our diverse portfolio of projects tailored to meet the unique needs
+          of
+          [Industry Name]. From groundbreaking software applications to state-of-the-art hardware solutions, our team
+          has
+          consistently delivered innovative and reliable products that empower businesses in [Industry Name] to thrive
+          in
+          the digital age. Explore our success stories and discover how our technological expertise has reshaped the
+          landscape of [Industry Name].
+          <br><br>
+          <b>2. Digital Transformation Across Sectors</b>
+          <br>
+          In an era marked by rapid technological advancements, [Your Company Name] stands at the forefront of digital
+          transformation across various sectors. Our work spans industries such as [Sector 1], [Sector 2], and [Sector
+          3],
+          showcasing our adaptability and proficiency in addressing the distinct challenges each sector presents.
+          Whether
+          it's streamlining processes, enhancing customer experiences, or optimizing operations, our solutions have
+          consistently demonstrated a positive impact on businesses across the board.
+          <br><br>
+          <b>3. Bespoke Software Development</b>
+          <br>
+          One of our core strengths lies in bespoke software development, where we collaborate closely with clients to
+          create tailor-made solutions that align perfectly with their objectives. From intuitive user interfaces to
+          complex backend systems, our software development projects reflect a commitment to precision and
+          functionality.
+          Discover the diverse range of software applications we've crafted, each a testament to our dedication to
+          delivering high-quality, customized solutions.
+          <br><br>
+          <b>4. Strategic Consultancy and Advisory Services</b>
+          <br>
+          Beyond technical expertise, [Your Company Name] also offers strategic consultancy and advisory services to
+          guide
+          businesses through the intricacies of today's competitive landscape. Our seasoned consultants work
+          hand-in-hand
+          with clients to identify opportunities, mitigate risks, and formulate effective strategies for growth. Explore
+          how our strategic insights have empowered organizations to make informed decisions and stay ahead in an
+          ever-evolving business environment.
+          <br><br>
+          <b>5. Client Success Stories</b>
+          <br>
+          Our success is inseparable from the success of our clients. The "Client Success Stories" section highlights
+          some
+          of the remarkable transformations we've facilitated for our partners. From startups to established
+          enterprises,
+          our collaborative approach and commitment to excellence have consistently resulted in tangible, positive
+          outcomes. Dive into these narratives to gain insights into how [Your Company Name] has played a pivotal role
+          in
+          the achievements of our valued clients, and envision the possibilities for your own success.
+        </div>
+      </div>
+      <div class="content blog bg-emerald-200 hidden">
+        <div class="content-heading blog bg-gray-400 p-4 text-6xl md:hidden sticky top-16">BLOG</div>
+        <div class="content-text blog bg-emerald-200 p-4"><b>1. The Rise of AI in Everyday Life</b>
+          <br>
+          In our ever-evolving digital landscape, Artificial Intelligence (AI) is becoming more ingrained in our daily
+          lives than ever before. From virtual assistants making our homes smarter to predictive algorithms shaping
+          personalized online experiences, we delve into the myriad ways AI is transforming the way we live, work, and
+          interact. Join us on a journey through the rise of AI and its far-reaching implications on society.
+          <br><br>
+          <b>2. Navigating the Cloud: A Guide to Cloud Computing Solutions</b>
+          <br>
+          Cloud computing has revolutionized the way businesses operate, offering scalable, cost-effective solutions
+          that
+          empower organizations to thrive in the digital era. In this blog post, we unravel the complexities of cloud
+          computing, exploring its various models, deployment strategies, and the unparalleled benefits it brings to
+          businesses of all sizes. Whether you're a seasoned IT professional or a newcomer to the cloud, this guide
+          provides insights into navigating the cloud landscape.
+          <br><br>
+          <b>3. The Intersection of Design and Technology: Crafting User-Centric Experiences</b>
+          <br>
+          User experience (UX) design is a critical element in the success of digital products and services. In this
+          blog
+          installment, we explore the intersection of design and technology, delving into the principles and practices
+          that shape user-centric experiences. From intuitive interfaces to the psychology behind user interactions, we
+          uncover the secrets to creating digital products that not only meet but exceed user expectations.
+          <br><br>
+          <b>4. Blockchain Unveiled: Beyond Cryptocurrencies</b>
+          <br>
+          While blockchain technology gained prominence through cryptocurrencies like Bitcoin, its applications extend
+          far
+          beyond the realm of finance. In this blog post, we demystify blockchain, shedding light on its decentralized
+          nature, security features, and the diverse industries it is poised to revolutionize. Join us as we explore the
+          potential impact of blockchain on supply chain management, healthcare, and beyond.
+          <br><br>
+          <b>5. The Future of Tech: Emerging Trends to Watch</b>
+          <br>
+          As technology continues to advance at an unprecedented pace, it's essential to keep a finger on the pulse of
+          emerging trends. In this forward-looking blog, we highlight the latest developments in areas such as quantum
+          computing, 5G, and the Internet of Things (IoT). Gain insights into the potential transformative effects of
+          these technologies and prepare to ride the wave of innovation in the ever-exciting landscape of the tech
+          industry.
+        </div>
+      </div>
+      <div class="content contact bg-emerald-200 hidden">
+        <div class="content-heading contact bg-gray-400 p-4 text-6xl md:hidden sticky top-16">CONTACT</div>
+        <div class="content-text contact bg-emerald-200 p-4">We value your feedback, inquiries, and the opportunity to
+          connect.
+          Whether you're interested in our services, have questions about our projects, or simply want to say hello,
+          we're
+          here to listen. Reach out to us via the contact form below, and our dedicated team will promptly respond to
+          your
+          message. Your satisfaction is our priority, and we look forward to the prospect of collaborating with you on
+          your next venture.
+          <br><br>
+          For more immediate assistance or to speak with a representative directly, feel free to contact us at [Your
+          Contact Number]. Our office hours are [Your Operating Hours], Monday through Friday. Thank you for considering
+          [Your Company Name] – we're excited to engage with you and explore the possibilities of working together.
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="bottom-nav flex flex-row md:hidden justify-center gap-x-8 p-4 font-bold">
+    <button class="bottom-menu about">ABOUT</button>
+    <button class="bottom-menu works">WORKS</button>
+    <button class="bottom-menu blog">BLOG</button>
+    <button class="bottom-menu contact">CONTACT</button>
+  </div>
+  <div class="footer bg-gray-200 text-black p-4">FOOTER</div>
 
-    <script type="module" src="js/main.js"></script>
+
+  <script type="module" src="js/main.js"></script>
 </body>
 
 </html>
