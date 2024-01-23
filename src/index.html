@@ -5,49 +5,54 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="css/global.css">
-  <title>WEB</title>
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,300;0,400;0,700;1,400&display=swap"
+    rel="stylesheet">
+  <title>Raihan Nizar's Website</title>
 </head>
 
-<body>
-  <div class="header bg-black text-white p-4 h-16 flex items-center sticky top-0">HEADER</div>
-  <div class="main md:flex md:flex-row md:justify-stretch md:px-40">
-    <div class="sidebar bg-gray-400 p-4 hidden md:flex md:flex-col">
-      <div class="menus hidden md:flex md:flex-col md:gap-y-4 md:sticky md:top-20">
-        <div class="menu about text-6xl">ABOUT</div>
-        <div class="menu works text-6xl">WORKS</div>
-        <div class="menu blog text-6xl">BLOG</div>
-        <div class="menu contact text-6xl">CONTACT</div>
+<body class="min-h-dvh flex flex-col">
+  <div class="header bg-emerald-600 px-4 h-10 flex items-center sticky top-0">
+    <div class="header-beep bg-emerald-200 animate-pulse h-1 w-1 rounded mr-2"></div>
+    <p class="header-text text-emerald-200 text-sm">raihancodes.web.id is <u>online</u></p>
+  </div>
+  <div class="main grow bg-emerald-200 md:flex md:flex-row md:justify-stretch md:px-40">
+    <div class="sidebar p-10 w-60 hidden md:flex md:flex-col">
+      <div class="menus hidden md:flex md:flex-col md:gap-y-4 md:sticky md:top-[5rem] text-emerald-800">
+        <div class="menu about text-4xl font-bold hover:underline">ABOUT</div>
+        <div class="menu works text-4xl font-bold hover:underline">WORKS</div>
+        <div class="menu blog text-4xl font-bold hover:underline">BLOG</div>
+        <div class="menu contact text-4xl font-bold hover:underline">CONTACT</div>
       </div>
     </div>
     <div class="contents relative">
 
       <!-- CONTENT ABOUT (tidak hidden karena dimunculkan pertama) -->
       <div class="content about bg-emerald-200 w-full">
-        <div class="content-heading about bg-gray-400 p-4 text-6xl md:hidden sticky top-16">ABOUT</div>
+        <h2 class="content-heading about bg-emerald-200 p-4 md:hidden sticky top-10 underline">ABOUT</h2>
         <div class="content-text about bg-emerald-200 p-4 md:p-10 flex flex-col gap-y-4">
           <img class="rounded-xl" src="img/photo.jpeg" alt="Personal Photo" width="100px">
           <div class="content-text-main flex flex-col gap-2">
             <h2 class="font-bold">Hello 👋</h2>
             <h2>Welcome to Raihan's website, your friendly tech guy.</h2>
-            <p>Currently learning @<a href="https://devscale.id">devscale.id</a></p>
+            <p>Currently learning @<a href="https://devscale.id" target="_blank">devscale.id</a></p>
           </div>
         </div>
       </div>
 
       <!-- CONTENT WORKS -->
       <div class="content works bg-emerald-200 hidden w-full">
-        <div class="content-heading works bg-gray-400 p-4 text-6xl md:hidden sticky top-16">WORKS</div>
+        <h2 class="content-heading works bg-emerald-200 p-4 md:hidden sticky top-10 underline">WORKS</h2>
         <div
           class="content-text works bg-emerald-200 p-4 md:p-10 flex flex-col justify-stretch md:flex-row md:overflow-x-auto md:justify-start gap-4">
-
           <a class="w-full flex flex-col" href="https://tanggalmerah.vercel.app" target="_blank">
-
             <div class="img-frame h-48 w-full overflow-hidden bg-[#FCF7E4]">
               <img class="object-center object-contain h-48 transition ease-out duration-300 hover:scale-110"
                 src="./img/work-1-tanggalmerah.jpg" alt="Tanggal Merah App">
             </div>
           </a>
-
           <a class="w-full" href="https://96jjg4.csb.app/" target="_blank">
             <div class="img-frame h-48 overflow-hidden bg-[#DC67DA]">
               <img class="object-center object-contain h-48 transition ease-out duration-300 hover:scale-110"
@@ -55,15 +60,14 @@
             </div>
           </a>
         </div>
-
-        <div class="content-footer works p-4 md:p-10">
+        <div class="content-footer works px-4 md:px-10">
           <i>more projects to come!</i>
         </div>
       </div>
 
       <!-- CONTENT BLOG -->
       <div class="content blog bg-emerald-200 hidden w-full">
-        <div class="content-heading blog bg-gray-400 p-4 text-6xl md:hidden sticky top-16">BLOG</div>
+        <h2 class="content-heading blog bg-emerald-200 p-4 md:hidden sticky top-10 underline">BLOG</h2>
         <div class="content-text blog bg-emerald-200 p-4 md:p-10 flex flex-col gap-8">
           <div class="content-text-card flex flex-col gap-4">
             <h2 class="content-text-heading text-2xl font-bold">Dari Nol ke Next.js</h2>
@@ -96,7 +100,7 @@
                 tentang JavaScript dan Next.js.</p>
               </p>
             </div>
-            <p class="content-text-continue first-text underline">baca lebih lanjut...</p>
+            <a class="content-text-continue first-text"><i>baca lebih lanjut...</i></a>
           </div>
 
           <div class="content-text-card flex flex-col gap-4">
@@ -125,40 +129,41 @@
                 bisa menjadi bagian integral dari kreativitas kita.</p>
               </p>
             </div>
-            <p class="content-text-continue second-text underline">baca lebih lanjut...</p>
+            <a class="content-text-continue second-text"><i>baca lebih lanjut...</i></a>
           </div>
         </div>
       </div>
 
       <!-- CONTENT CONTACT -->
       <div class="content contact bg-emerald-200 hidden w-full">
-        <div class="content-heading contact bg-gray-400 p-4 text-6xl md:hidden sticky top-16">CONTACT</div>
+        <h2 class="content-heading contact bg-emerald-200 p-4 md:hidden sticky top-10 underline">CONTACT</h2>
         <div class="content-text contact bg-emerald-200 p-4 md:p-10 flex flex-col gap-y-4">
           <h2>Let's work together!</h2>
           <p>Reach me at:</p>
           <div class="social flex flex-row gap-x-4">
-            <a href="https://www.linkedin.com/in/raihannizar">
-              <img src="img/contact-linkedin.svg" alt="linkedin" width="20rem" />
+            <a class="hover:-translate-y-0.5 ease-out" href="https://www.linkedin.com/in/raihannizar" target="_blank">
+              <img src="img/contact-linkedin.svg" alt="linkedin" width="24rem" />
             </a>
-            <a href="https://twitter.com/r__h_n">
-              <img src="img/contact-twitter.svg" alt="twitter" width="20rem" />
+            <a class="hover:-translate-y-0.5 ease-out" href="https://twitter.com/r__h_n" target="_blank">
+              <img src="img/contact-twitter.svg" alt="twitter" width="24rem" />
             </a>
-            <a href="https://github.com/raihanizar">
-              <img src="img/contact-github.svg" alt="github" width="20rem" />
+            <a class="hover:-translate-y-0.5 ease-out" href="https://github.com/raihanizar" target="_blank">
+              <img src="img/contact-github.svg" alt="github" width="24rem" />
             </a>
           </div>
         </div>
       </div>
     </div>
   </div>
-  <div class="bottom-nav flex flex-row md:hidden justify-center gap-x-8 p-4 font-bold">
-    <button class="bottom-menu about">ABOUT</button>
-    <button class="bottom-menu works">WORKS</button>
-    <button class="bottom-menu blog">BLOG</button>
-    <button class="bottom-menu contact">CONTACT</button>
+  <div class="bottom-nav bg-emerald-200 flex flex-row md:hidden justify-center gap-x-8 p-4 font-bold">
+    <p class="bottom-menu about active:underline">ABOUT</p>
+    <p class="bottom-menu works active:underlinee">WORKS</p>
+    <p class="bottom-menu blog active:underline">BLOG</p>
+    <p class="bottom-menu contact active:underline">CONTACT</p>
   </div>
-  <div class="footer bg-gray-200 text-black p-4">FOOTER</div>
-
+  <div class="footer bg-slate-200 p-1 flex justify-center items-center">
+    <p class="footer-text text-sm">Powered by ☕ | 2024</p>
+  </div>
 
   <script type="module" src="js/main.js"></script>
 </body>

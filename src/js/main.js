@@ -8,7 +8,7 @@ const allContentTextMain = document.querySelectorAll(".content-text-main");
 menuDiv.forEach(menu => {
   menu.addEventListener("click", () => {
     // reset scroll ke atas
-    document.documentElement.scrollTop = 0;
+    document.documentElement.scrollTop = 0;    
 
     // get kategori menu: about / works / blog / contact
     const menuCategory = menu.classList.item(1);
