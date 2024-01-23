@@ -20,100 +20,133 @@
       </div>
     </div>
     <div class="contents relative">
-      
+
       <!-- CONTENT ABOUT (tidak hidden karena dimunculkan pertama) -->
       <div class="content about bg-emerald-200 w-full">
         <div class="content-heading about bg-gray-400 p-4 text-6xl md:hidden sticky top-16">ABOUT</div>
-        <div class="content-text about bg-emerald-200 p-4">
-          Welcome to [Your Company Name], where innovation meets excellence. Established with a passion for pushing
-          boundaries and redefining industry standards, we pride ourselves on delivering cutting-edge solutions that
-          cater
-          to the evolving needs of our clients. At [Your Company Name], we believe in the power of collaboration and
-          continuous improvement, ensuring that every project we undertake reflects our commitment to quality and
-          ingenuity. Our team of dedicated professionals brings a wealth of expertise to the table, united by a common
-          goal: to exceed expectations and leave a lasting impact in the ever-changing landscape of [Your Industry].
-          <br><br>
-          Driven by a relentless pursuit of excellence, [Your Company Name] is not just a service provider but a partner
-          in your success story. We understand that each client is unique, and our tailored approach is designed to
-          address your specific challenges and goals. Whether you're seeking innovative technology solutions, strategic
-          consulting, or unparalleled customer support, we've got you covered. Join us on a journey where creativity
-          meets
-          functionality, and let's build a future together that's defined by progress, integrity, and unparalleled
-          achievement. Welcome to [Your Company Name] – where your vision becomes our mission.
+        <div class="content-text about bg-emerald-200 p-4 md:p-10 flex flex-col gap-y-4">
+          <img class="rounded-xl" src="img/photo.jpeg" alt="Personal Photo" width="100px">
+          <div class="content-text-main flex flex-col gap-2">
+            <h2 class="font-bold">Hello 👋</h2>
+            <h2>Welcome to Raihan's website, your friendly tech guy.</h2>
+            <p>Currently learning @<a href="https://devscale.id">devscale.id</a></p>
+          </div>
         </div>
       </div>
 
       <!-- CONTENT WORKS -->
       <div class="content works bg-emerald-200 hidden w-full">
         <div class="content-heading works bg-gray-400 p-4 text-6xl md:hidden sticky top-16">WORKS</div>
-        <div class="content-text works bg-emerald-200 p-10">
-          <div class="img-frame w-40 h-64 overflow-hidden">
-            <img class="w-40 h-64 object-cover transition ease-out duration-300 hover:scale-110" src="./img/work-1-tanggalmerah.jpg" alt="Tanggal Merah App">
-          </div>
+        <div
+          class="content-text works bg-emerald-200 p-4 md:p-10 flex flex-col justify-stretch md:flex-row md:overflow-x-auto md:justify-start gap-4">
+
+          <a class="w-full flex flex-col" href="https://tanggalmerah.vercel.app" target="_blank">
+
+            <div class="img-frame h-48 w-full overflow-hidden bg-[#FCF7E4]">
+              <img class="object-center object-contain h-48 transition ease-out duration-300 hover:scale-110"
+                src="./img/work-1-tanggalmerah.jpg" alt="Tanggal Merah App">
+            </div>
+          </a>
+
+          <a class="w-full" href="https://96jjg4.csb.app/" target="_blank">
+            <div class="img-frame h-48 overflow-hidden bg-[#DC67DA]">
+              <img class="object-center object-contain h-48 transition ease-out duration-300 hover:scale-110"
+                src="./img/work-1-biolink.jpg" alt="Bio Link App">
+            </div>
+          </a>
         </div>
-        <div class="content-footer p-10">more projects to come!</div>
+
+        <div class="content-footer works p-4 md:p-10">
+          <i>more projects to come!</i>
+        </div>
       </div>
 
       <!-- CONTENT BLOG -->
       <div class="content blog bg-emerald-200 hidden w-full">
         <div class="content-heading blog bg-gray-400 p-4 text-6xl md:hidden sticky top-16">BLOG</div>
-        <div class="content-text blog bg-emerald-200 p-4"><b>1. The Rise of AI in Everyday Life</b>
-          <br>
-          In our ever-evolving digital landscape, Artificial Intelligence (AI) is becoming more ingrained in our daily
-          lives than ever before. From virtual assistants making our homes smarter to predictive algorithms shaping
-          personalized online experiences, we delve into the myriad ways AI is transforming the way we live, work, and
-          interact. Join us on a journey through the rise of AI and its far-reaching implications on society.
-          <br><br>
-          <b>2. Navigating the Cloud: A Guide to Cloud Computing Solutions</b>
-          <br>
-          Cloud computing has revolutionized the way businesses operate, offering scalable, cost-effective solutions
-          that
-          empower organizations to thrive in the digital era. In this blog post, we unravel the complexities of cloud
-          computing, exploring its various models, deployment strategies, and the unparalleled benefits it brings to
-          businesses of all sizes. Whether you're a seasoned IT professional or a newcomer to the cloud, this guide
-          provides insights into navigating the cloud landscape.
-          <br><br>
-          <b>3. The Intersection of Design and Technology: Crafting User-Centric Experiences</b>
-          <br>
-          User experience (UX) design is a critical element in the success of digital products and services. In this
-          blog
-          installment, we explore the intersection of design and technology, delving into the principles and practices
-          that shape user-centric experiences. From intuitive interfaces to the psychology behind user interactions, we
-          uncover the secrets to creating digital products that not only meet but exceed user expectations.
-          <br><br>
-          <b>4. Blockchain Unveiled: Beyond Cryptocurrencies</b>
-          <br>
-          While blockchain technology gained prominence through cryptocurrencies like Bitcoin, its applications extend
-          far
-          beyond the realm of finance. In this blog post, we demystify blockchain, shedding light on its decentralized
-          nature, security features, and the diverse industries it is poised to revolutionize. Join us as we explore the
-          potential impact of blockchain on supply chain management, healthcare, and beyond.
-          <br><br>
-          <b>5. The Future of Tech: Emerging Trends to Watch</b>
-          <br>
-          As technology continues to advance at an unprecedented pace, it's essential to keep a finger on the pulse of
-          emerging trends. In this forward-looking blog, we highlight the latest developments in areas such as quantum
-          computing, 5G, and the Internet of Things (IoT). Gain insights into the potential transformative effects of
-          these technologies and prepare to ride the wave of innovation in the ever-exciting landscape of the tech
-          industry.
+        <div class="content-text blog bg-emerald-200 p-4 md:p-10 flex flex-col gap-8">
+          <div class="content-text-card flex flex-col gap-4">
+            <h2 class="content-text-heading text-2xl font-bold">Dari Nol ke Next.js</h2>
+            <p class="content-text-hook">
+              Bagi banyak orang, dunia pemrograman mungkin terasa seperti labirin tak berujung, namun dengan tekad yang
+              kuat dan sumber daya yang tepat, perjalanan ini dapat menjadi pintu gerbang menuju dunia pengembangan web
+              yang menarik.
+            </p>
+            <div class="content-text-main first-text hidden gap-4">
+              <p>
+                Ketika saya pertama kali memulai perjalanan belajar JavaScript, segala sesuatu terasa begitu asing.
+                Console log, variabel, dan loop menjadi teman sehari-hari yang awalnya sulit dipahami. Namun, dengan
+                bimbingan tutorial online dan latihan yang konsisten, langkah-langkah pertama menuju pemahaman dasar
+                JavaScript pun terlewati. Melangkah lebih jauh, saya mengeksplorasi framework modern seperti React.js
+                dan
+                Next.js.
+              <p>Next.js, dengan kelebihannya dalam server-side rendering dan routing yang
+                mudah, memberikan fondasi yang
+                solid untuk membangun aplikasi web yang dinamis. Pemahaman konsep seperti routing dinamis, API routes,
+                dan
+                static site generation memungkinkan saya untuk menghadirkan pengalaman pengguna yang lebih responsif dan
+                efisien. Dengan setiap proyek yang saya kerjakan, pengetahuan saya tentang JavaScript semakin
+                berkembang,
+                dan saya merasakan dampak positifnya dalam kemampuan saya membangun website yang semakin kompleks.</p>
+              <p>
+                Dalam perjalanan ini, saya juga menemui komunitas yang sangat mendukung, baik melalui forum daring
+                maupun
+                acara meetup lokal. Berbagi pengalaman dan bertukar ide dengan sesama pengembang telah menjadi sumber
+                inspirasi dan motivasi tambahan. Semakin banyak pertanyaan yang diajukan, semakin dalam pemahaman saya
+                tentang JavaScript dan Next.js.</p>
+              </p>
+            </div>
+            <p class="content-text-continue first-text underline">baca lebih lanjut...</p>
+          </div>
+
+          <div class="content-text-card flex flex-col gap-4">
+            <h2 class="content-text-heading text-2xl font-bold">Rahasia di Balik 'Lorem Ipsum': Kisah Menarik di Dunia
+              Desain</h2>
+            <p class="content-text-hook">
+              Dibalik kata 'Lorem Ipsum' terdapat cerita menarik yang mewarnai dunia desain. Meski katanya tak bermakna,
+              ternyata tersembunyi kisah menarik di balik karya ini, yang kerap menjadi fondasi kreatif tanpa terhambat
+              oleh makna kata.
+            </p>
+            <div class="content-text-main second-text hidden gap-4">
+              <p>
+                Pada abad ke-16, seorang penemuan tak sengaja oleh seorang pencetakan buku, Lorem Ipsum, tercipta. Sang
+                pencetak, ketika hendak mencetak buku cetak, mendapati bahwa teks aslinya telah habis. Sebagai solusi
+                cepat, ia memilih potongan teks dari karya sastra Latin abad pertengahan oleh Cicero dan Virgil, yang
+                pada
+                saat itu dianggap sudah tidak relevan. Frase-fraze seperti "Lorem ipsum dolor sit amet" diambil dari
+                bagian-bagian acak dari teks tersebut, menciptakan suatu rangkaian kata yang tidak memiliki makna
+                khusus.
+              <p>Seiring waktu, Lorem Ipsum mendarah daging dalam dunia desain grafis dan
+                pencetakan. Penggunaannya tidak hanya praktis sebagai pengganti teks saat mendesain tata letak, tetapi
+                juga berfungsi sebagai bentuk standar untuk menguji bagaimana teks akan terlihat pada suatu desain tanpa
+                teralihkan oleh makna. Meskipun tidak memiliki arti nyata, Lorem Ipsum telah menjadi sejenis "bahasa
+                palsu" yang meresap ke dalam industri desain, membawa cerita unik tentang bagaimana sesuatu yang
+                kebetulan
+                bisa menjadi bagian integral dari kreativitas kita.</p>
+              </p>
+            </div>
+            <p class="content-text-continue second-text underline">baca lebih lanjut...</p>
+          </div>
         </div>
       </div>
 
       <!-- CONTENT CONTACT -->
       <div class="content contact bg-emerald-200 hidden w-full">
         <div class="content-heading contact bg-gray-400 p-4 text-6xl md:hidden sticky top-16">CONTACT</div>
-        <div class="content-text contact bg-emerald-200 p-4">We value your feedback, inquiries, and the opportunity to
-          connect.
-          Whether you're interested in our services, have questions about our projects, or simply want to say hello,
-          we're
-          here to listen. Reach out to us via the contact form below, and our dedicated team will promptly respond to
-          your
-          message. Your satisfaction is our priority, and we look forward to the prospect of collaborating with you on
-          your next venture.
-          <br><br>
-          For more immediate assistance or to speak with a representative directly, feel free to contact us at [Your
-          Contact Number]. Our office hours are [Your Operating Hours], Monday through Friday. Thank you for considering
-          [Your Company Name] – we're excited to engage with you and explore the possibilities of working together.
+        <div class="content-text contact bg-emerald-200 p-4 md:p-10 flex flex-col gap-y-4">
+          <h2>Let's work together!</h2>
+          <p>Reach me at:</p>
+          <div class="social flex flex-row gap-x-4">
+            <a href="https://www.linkedin.com/in/raihannizar">
+              <img src="img/contact-linkedin.svg" alt="linkedin" width="20rem" />
+            </a>
+            <a href="https://twitter.com/r__h_n">
+              <img src="img/contact-twitter.svg" alt="twitter" width="20rem" />
+            </a>
+            <a href="https://github.com/raihanizar">
+              <img src="img/contact-github.svg" alt="github" width="20rem" />
+            </a>
+          </div>
         </div>
       </div>
     </div>
