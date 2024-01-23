@@ -10,7 +10,7 @@
 
 <body>
   <div class="header bg-black text-white p-4 h-16 flex items-center sticky top-0">HEADER</div>
-  <div class="main md:flex md:px-40">
+  <div class="main md:flex md:flex-row md:justify-stretch md:px-40">
     <div class="sidebar bg-gray-400 p-4 hidden md:flex md:flex-col">
       <div class="menus hidden md:flex md:flex-col md:gap-y-4 md:sticky md:top-20">
         <div class="menu about text-6xl">ABOUT</div>
@@ -20,7 +20,9 @@
       </div>
     </div>
     <div class="contents relative">
-      <div class="content about bg-emerald-200 top-0">
+      
+      <!-- CONTENT ABOUT (tidak hidden karena dimunculkan pertama) -->
+      <div class="content about bg-emerald-200 w-full">
         <div class="content-heading about bg-gray-400 p-4 text-6xl md:hidden sticky top-16">ABOUT</div>
         <div class="content-text about bg-emerald-200 p-4">
           Welcome to [Your Company Name], where innovation meets excellence. Established with a passion for pushing
@@ -40,61 +42,20 @@
           achievement. Welcome to [Your Company Name] – where your vision becomes our mission.
         </div>
       </div>
-      <div class="content works bg-emerald-200 hidden">
+
+      <!-- CONTENT WORKS -->
+      <div class="content works bg-emerald-200 hidden w-full">
         <div class="content-heading works bg-gray-400 p-4 text-6xl md:hidden sticky top-16">WORKS</div>
-        <div class="content-text works bg-emerald-200 p-4"><b>1. Innovative Solutions for [Industry Name]</b>
-          <br>
-          At [Your Company Name], we take pride in our diverse portfolio of projects tailored to meet the unique needs
-          of
-          [Industry Name]. From groundbreaking software applications to state-of-the-art hardware solutions, our team
-          has
-          consistently delivered innovative and reliable products that empower businesses in [Industry Name] to thrive
-          in
-          the digital age. Explore our success stories and discover how our technological expertise has reshaped the
-          landscape of [Industry Name].
-          <br><br>
-          <b>2. Digital Transformation Across Sectors</b>
-          <br>
-          In an era marked by rapid technological advancements, [Your Company Name] stands at the forefront of digital
-          transformation across various sectors. Our work spans industries such as [Sector 1], [Sector 2], and [Sector
-          3],
-          showcasing our adaptability and proficiency in addressing the distinct challenges each sector presents.
-          Whether
-          it's streamlining processes, enhancing customer experiences, or optimizing operations, our solutions have
-          consistently demonstrated a positive impact on businesses across the board.
-          <br><br>
-          <b>3. Bespoke Software Development</b>
-          <br>
-          One of our core strengths lies in bespoke software development, where we collaborate closely with clients to
-          create tailor-made solutions that align perfectly with their objectives. From intuitive user interfaces to
-          complex backend systems, our software development projects reflect a commitment to precision and
-          functionality.
-          Discover the diverse range of software applications we've crafted, each a testament to our dedication to
-          delivering high-quality, customized solutions.
-          <br><br>
-          <b>4. Strategic Consultancy and Advisory Services</b>
-          <br>
-          Beyond technical expertise, [Your Company Name] also offers strategic consultancy and advisory services to
-          guide
-          businesses through the intricacies of today's competitive landscape. Our seasoned consultants work
-          hand-in-hand
-          with clients to identify opportunities, mitigate risks, and formulate effective strategies for growth. Explore
-          how our strategic insights have empowered organizations to make informed decisions and stay ahead in an
-          ever-evolving business environment.
-          <br><br>
-          <b>5. Client Success Stories</b>
-          <br>
-          Our success is inseparable from the success of our clients. The "Client Success Stories" section highlights
-          some
-          of the remarkable transformations we've facilitated for our partners. From startups to established
-          enterprises,
-          our collaborative approach and commitment to excellence have consistently resulted in tangible, positive
-          outcomes. Dive into these narratives to gain insights into how [Your Company Name] has played a pivotal role
-          in
-          the achievements of our valued clients, and envision the possibilities for your own success.
+        <div class="content-text works bg-emerald-200 p-10">
+          <div class="img-frame w-40 h-64 overflow-hidden">
+            <img class="w-40 h-64 object-cover transition ease-out duration-300 hover:scale-110" src="./img/work-1-tanggalmerah.jpg" alt="Tanggal Merah App">
+          </div>
         </div>
+        <div class="content-footer p-10">more projects to come!</div>
       </div>
-      <div class="content blog bg-emerald-200 hidden">
+
+      <!-- CONTENT BLOG -->
+      <div class="content blog bg-emerald-200 hidden w-full">
         <div class="content-heading blog bg-gray-400 p-4 text-6xl md:hidden sticky top-16">BLOG</div>
         <div class="content-text blog bg-emerald-200 p-4"><b>1. The Rise of AI in Everyday Life</b>
           <br>
@@ -137,7 +98,9 @@
           industry.
         </div>
       </div>
-      <div class="content contact bg-emerald-200 hidden">
+
+      <!-- CONTENT CONTACT -->
+      <div class="content contact bg-emerald-200 hidden w-full">
         <div class="content-heading contact bg-gray-400 p-4 text-6xl md:hidden sticky top-16">CONTACT</div>
         <div class="content-text contact bg-emerald-200 p-4">We value your feedback, inquiries, and the opportunity to
           connect.
