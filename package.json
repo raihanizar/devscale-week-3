@@ -6,8 +6,8 @@
   "scripts": {
     "lint": "npx eslint **/*.js",
     "lintfix": "npx eslint **/*.js --fix",
-    "dev": "concurrently \"lint\" \"vite\" \"npx tailwindcss -i ./src/css/styles.css -o ./src/css/global.css --watch\"",
-    "build": "concurrently \"lintfix\" \"vite build\" \"npx tailwindcss -i ./src/css/styles.css -o ./src/css/global.css\"",
+    "dev": "concurrently \"npm run lint\" \"vite\" \"npx tailwindcss -i ./src/css/styles.css -o ./src/css/global.css --watch\"",
+    "build": "concurrently \"npm run lintfix\" \"vite build\" \"npx tailwindcss -i ./src/css/styles.css -o ./src/css/global.css\"",
     "preview": "vite preview"
   },
   "devDependencies": {
