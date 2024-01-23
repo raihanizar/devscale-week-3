@@ -14,17 +14,22 @@
 </head>
 
 <body class="min-h-dvh flex flex-col">
-  <div class="header bg-emerald-600 px-4 h-10 flex items-center sticky top-0">
-    <div class="header-beep bg-emerald-200 animate-pulse h-1 w-1 rounded mr-2"></div>
-    <p class="header-text text-emerald-200 text-sm">raihancodes.web.id is <u>online</u></p>
+  <div class="header bg-emerald-600 px-4 h-10 flex flex-row justify-between items-center sticky top-0">
+    <div class="header-brand flex flex-row gap-x-2 justify-between items-center">
+      <div class="header-beep bg-emerald-200 animate-pulse h-1 w-1 rounded"></div>
+      <p class="header-text text-emerald-200 text-sm">raihancodes.web.id is <u>online</u></p>
+    </div>
+    <button class="button-confetti p-1 bg-slate-200 rounded hover:bg-slate-400">
+      <p class="text-sm text-emerald-800">Click for surpise! 🎉</p>
+    </button>
   </div>
   <div class="main grow bg-emerald-200 md:flex md:flex-row md:justify-stretch md:px-40">
     <div class="sidebar p-10 w-60 hidden md:flex md:flex-col">
       <div class="menus hidden md:flex md:flex-col md:gap-y-4 md:sticky md:top-[5rem] text-emerald-800">
-        <div class="menu about text-4xl font-bold hover:underline">ABOUT</div>
-        <div class="menu works text-4xl font-bold hover:underline">WORKS</div>
-        <div class="menu blog text-4xl font-bold hover:underline">BLOG</div>
-        <div class="menu contact text-4xl font-bold hover:underline">CONTACT</div>
+        <div class="menu about text-4xl font-bold hover:underline hover:cursor-pointer">ABOUT</div>
+        <div class="menu works text-4xl font-bold hover:underline hover:cursor-pointer">WORKS</div>
+        <div class="menu blog text-4xl font-bold hover:underline hover:cursor-pointer">BLOG</div>
+        <div class="menu contact text-4xl font-bold hover:underline hover:cursor-pointer">CONTACT</div>
       </div>
     </div>
     <div class="contents relative">
@@ -70,7 +75,7 @@
         <h2 class="content-heading blog bg-emerald-200 p-4 md:hidden sticky top-10 underline">BLOG</h2>
         <div class="content-text blog bg-emerald-200 p-4 md:p-10 flex flex-col gap-8">
           <div class="content-text-card flex flex-col gap-4">
-            <h2 class="content-text-heading text-2xl font-bold">Dari Nol ke Next.js</h2>
+            <h2 class="content-text-heading font-bold">Dari Nol ke Next.js</h2>
             <p class="content-text-hook">
               Bagi banyak orang, dunia pemrograman mungkin terasa seperti labirin tak berujung, namun dengan tekad yang
               kuat dan sumber daya yang tepat, perjalanan ini dapat menjadi pintu gerbang menuju dunia pengembangan web
@@ -104,7 +109,7 @@
           </div>
 
           <div class="content-text-card flex flex-col gap-4">
-            <h2 class="content-text-heading text-2xl font-bold">Rahasia di Balik 'Lorem Ipsum': Kisah Menarik di Dunia
+            <h2 class="content-text-heading font-bold">Rahasia di Balik 'Lorem Ipsum': Kisah Menarik di Dunia
               Desain</h2>
             <p class="content-text-hook">
               Dibalik kata 'Lorem Ipsum' terdapat cerita menarik yang mewarnai dunia desain. Meski katanya tak bermakna,
@@ -164,6 +169,10 @@
   <div class="footer bg-slate-200 p-1 flex justify-center items-center">
     <p class="footer-text text-sm">Powered by ☕ | 2024</p>
   </div>
+
+  <!-- Confetti Canvas -->
+  <canvas class="canvas-confetti absolute z-50 w-full h-full pointer-events-none"></canvas>
+  <!-- <canvas class="confetti" absolute inset-0 -z-10 h-full !max-w-none pointer-events-none -->
 
   <script type="module" src="js/main.js"></script>
 </body>

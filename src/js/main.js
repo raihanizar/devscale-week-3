@@ -1,3 +1,5 @@
+import confetti from "canvas-confetti";
+
 const menuDiv = document.querySelectorAll(".menu");
 const bottomMenuDiv = document.querySelectorAll(".bottom-menu");
 const contentDiv = document.querySelectorAll(".content");
@@ -8,7 +10,7 @@ const allContentTextMain = document.querySelectorAll(".content-text-main");
 menuDiv.forEach(menu => {
   menu.addEventListener("click", () => {
     // reset scroll ke atas
-    document.documentElement.scrollTop = 0;    
+    document.documentElement.scrollTop = 0;
 
     // get kategori menu: about / works / blog / contact
     const menuCategory = menu.classList.item(1);
@@ -99,5 +101,24 @@ allContentTextContinue.forEach(contentTextContinue => {
         contentTextContinue.classList.add("hidden");
       }
     });
+  });
+});
+
+// launch confetti 🎉
+const confettiCanvas = document.querySelector("canvas-confetti");
+const buttonConfetti = document.querySelector(".button-confetti");
+
+const myConfetti = confetti.create(confettiCanvas, {
+  resize: true,
+});
+
+buttonConfetti.addEventListener("click", () => {
+  myConfetti({
+    particleCount: 50,
+    angle: 210,
+    origin: {
+      x: 0.98,
+      y: 0.02
+    }
   });
 });
